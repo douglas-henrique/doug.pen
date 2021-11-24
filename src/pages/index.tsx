@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
+import { NextSeo } from 'next-seo';
 import { Quote } from '../components/Quote/index'
-import Head from "next/head" 
+import Head from "next/head"
 import dynamic from 'next/dynamic'
 import styles from './index.module.scss'
 import CodeContainer from '../components/CodeContainer/index'
@@ -29,6 +30,24 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <NextSeo
+        title="Welcome | doug.pen"
+        description="Your simple and functional frontend playground 😎"
+        canonical="https://pen.dougdev.com.br/"
+        openGraph={{
+          url: 'https://pen.dougdev.com.br/',
+          title: 'Welcome | doug.pen',
+          description: 'Your simple and functional frontend playground 😎',
+          images: [
+            {
+              url: 'https://pen.dougdev.com.br/screen-shot.png',
+              alt: 'Welcome page screen shot',
+              type: 'image/jpeg',
+            }, 
+          ],
+          site_name: 'doug.pen',
+        }}
+      />
       <Head>
         <title>doug.pen | Welcome</title>
       </Head>
