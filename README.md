@@ -1,7 +1,11 @@
-# doug.pen
+# 👨🏻‍💻 doug.pen 
 
-> This is a readme from doug.pen frontend playgroung
----
+> This is a readme from doug.pen frontend playground
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/9868584/143151461-c0764c83-2dae-4e20-88a4-6452be0af11d.jpeg" width="600" alt="Doug Pen" />
+        <img width="600" alt="Doug Pen" src="https://user-images.githubusercontent.com/9868584/143151379-d9c03ebe-e606-4071-b43d-caa8fca5ff91.png">
+</p>
 
 ### Table of Contents
 Just to make your experience more simple :) 
