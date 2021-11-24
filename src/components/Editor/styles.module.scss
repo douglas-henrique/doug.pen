@@ -1,0 +1,21 @@
+.editorPane {
+  display: flex;
+  flex: 1;
+  flex-direction: column;;
+  margin: 10px
+}
+
+.editorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: black;
+  height: 60px;
+  padding: 10px;
+
+  h1 {
+    color: #fff;
+  }
+}

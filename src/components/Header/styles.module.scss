@@ -1,0 +1,16 @@
+.headerContainer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 720px) {
+      img {
+          width: 9rem;
+      }
+  }
+}
+
+.headerContent {
+  display: flex;
+  align-items: center; 
+}
