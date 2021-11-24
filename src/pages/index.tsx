@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import type { NextPage } from 'next'
-
+import { Quote } from '../components/Quote/index'
+import Head from "next/head" 
 import dynamic from 'next/dynamic'
 import styles from './index.module.scss'
 import CodeContainer from '../components/CodeContainer/index'
-import { Quote } from '../components/Quote/index'
 const Editor = dynamic(() => import('../components/Editor/index'), { ssr: false }) //code mirror need to run on client side
 
 const Home: NextPage = () => {
@@ -26,10 +26,13 @@ const Home: NextPage = () => {
 
     return () => clearTimeout(timeout)
   }, [html, css, js])
- 
+
   return (
     <>
-     <Quote />
+      <Head>
+        <title>doug.pen | Welcome</title>
+      </Head>
+      <Quote />
       <div className={styles.pane}>
         <Editor onChange={setHtml} displayName={"HTML"} value={html} language="xml" />
         <Editor onChange={setCss} displayName={"CSS"} value={css} language="css" />
